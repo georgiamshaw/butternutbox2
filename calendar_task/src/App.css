@@ -1,0 +1,147 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  color: #212121;
+}
+
+.headings {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.currentMonth {
+  font-size: 24px;
+  color: #174f78;
+}
+
+.weekRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.modalWrapper {
+  margin: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(54, 50 ,48 ,.6);
+  flex-direction: column;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.calendarWrapper {
+  background-color: #f7f5f3;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #e66c55;
+  width: 400px;
+}
+
+.day {
+  margin: 12px;
+  height: 30px;
+  width: initial;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activeDay:hover {
+  background-color: #ffe180;
+}
+
+.weekNames {
+  cursor: default;
+  color: #1e5d84;
+}
+
+.inactiveDay {
+  color: #9e9e9e;
+}
+
+.today {
+  background: #efefee;
+}
+
+.selectedDay {
+  color:e66c55;
+  background: #ffe180;
+  border: 2px solid #e66c55;
+  box-sizing: border-box;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconDate {
+  position: absolute;
+  left: 48%;
+  top: 65%;
+  color: #174f78;
+  transform: translate(-50%, -50%);
+}
+
+.iconDateWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.dateWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.vanIconWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar {
+  padding: 1rem;
+}
+
+.cancelButton {
+  margin: 1rem 0.5rem;
+  background-color:#f7f5f3;
+  color: #9c9896;
+  padding: 0.5rem;
+  border: none;
+}
+
+.cancelButton:hover {
+  color: #fff;
+  background-color: #9c9896;
+}
+
+.changeButton {
+  margin: 1rem .5rem;
+  border-color: #e66c55;
+  color: #e66c55;
+  background-color: #fff;
+  padding: 0.5rem;
+  box-shadow: 0 0.2rem 0.4rem 0 rgb(0 0 0 / 20%);
+}
+
+.changeButton:hover {
+  color: #fff;
+  background-color: #e66c55;
+}
