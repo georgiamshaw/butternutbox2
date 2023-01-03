@@ -26,9 +26,10 @@ Other future improvements:
 
 To get started with the task, ensure you have both `node` and `yarn` installed locally on your machine and both commands are available to be called.
 
-1. Install the required dependencies with `yarn install`
-2. Start the development server by running `yarn start`
-3. Once the server starts successfully, you should be able to view the task on `http://localhost:3000/`
+1. `cd calendar_task` 
+2. Install the required dependencies with `yarn install`
+3. Start the development server by running `yarn start`
+4. Once the server starts successfully, you should be able to view the task on `http://localhost:3000/`
 
 ## Technical Requirements
 
